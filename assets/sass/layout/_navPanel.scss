@@ -6,32 +6,6 @@
 
 /* Nav Panel */
 
-	#navPanelToggle {
-		@include icon(false, solid);
-		@include vendor('transition', (
-			'color #{_duration(transition)} ease-in-out',
-			'background-color #{_duration(transition)} ease-in-out',
-			'box-shadow #{_duration(transition)} ease-in-out'
-		));
-		display: none;
-		position: fixed;
-		top: 0.75rem;
-		right: 0.75rem;
-		border: 0;
-		color: _palette(invert, fg-bold);
-		font-family: _font(family-heading);
-		font-size: 0.9rem;
-		font-weight: _font(weight-heading);
-		letter-spacing: 0.075em;
-		padding: 0.375rem 1.25rem;
-		text-transform: uppercase;
-		z-index: _misc(z-index-base) + 1;
-
-		&:before {
-			content: '\f0c9';
-			margin-right: 0.5rem;
-		}
-
 		&.alt {
 			background-color: transparentize(_palette(bg), 0.125);
 			box-shadow: 0 0.125rem 0.75rem 0 transparentize(_palette(invert, bg), 0.75);
