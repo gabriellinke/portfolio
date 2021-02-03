@@ -4720,3 +4720,44 @@ input, select, textarea {
 		height: 300px;
 		display: flex;
 	}
+
+
+	#main article.featured-post .image-eb
+	{
+		display: grid;
+		grid-template-columns: auto auto;
+		margin: 2.5rem 0;
+	}
+
+	@media screen and (max-width: 850px)
+	{
+		#main article.featured-post .image-eb
+		{
+			display: grid;
+			grid-template-columns: auto;
+			gap: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 650px)
+	{
+		#main article.featured-post .image-eb img.small
+		{
+			width: 350px;
+			height: auto;
+		}
+	}
+
+	#main article.featured-post .image-eb .image-container
+	{
+		display: flex;
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#main article.featured-post .image-eb img
+	{
+		height: 300px;
+		display: flex;
+	}
